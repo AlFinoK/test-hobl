@@ -1,0 +1,122 @@
+@media screen and (max-width: 1440px) {
+    .app::before {
+        top: -0.5rem;
+    }
+
+    .wrapper {
+        max-width: 970px;
+    }
+    .accordion-full {
+        &__card {
+            max-width: 240px;
+        }
+        &__card-img {
+            margin-bottom: 0;
+        }
+        &__card-img img {
+            width: 80%;
+            height: 80%;
+        }
+        &__card-number {
+            font-size: 2.5rem;
+        }
+    }
+    .accordion-small__text {
+        max-width: 400px;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .product-subitem {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .wrapper {
+        max-width: 700px;
+    }
+
+    .accordion-full {
+        &__cards {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        &__card {
+            max-width: 400px;
+        }
+    }
+    .accordion-small {
+        cursor: pointer;
+        flex-direction: column;
+        &::before {
+            left: 15%;
+            top: 10%;
+        }
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+    .product-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-item::before {
+        display: none;
+    }
+    .product-subitems {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .app::before {
+        display: none;
+    }
+    .wrapper {
+        max-width: 500px;
+    }
+    .accordion-small::before {
+        display: none;
+    }
+    .product-item:nth-child(3)::before {
+        display: block;
+        bottom: -10%;
+        right: 20%;
+        width: 60%;
+        height: 10%;
+    }
+
+    .subtitle {
+        padding: 0.75rem;
+    }
+    .description,
+    .subtitle {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 570px) {
+    body {
+        font-size: 1rem;
+    }
+    .wrapper {
+        max-width: 320px;
+    }
+    .title {
+        font-size: 1.7rem;
+    }
+    .accordion-small {
+        &__title {
+            font-size: 1.2rem;
+        }
+    }
+    .product-item,
+    .product-subitem {
+        max-width: 264px;
+    }
+}
